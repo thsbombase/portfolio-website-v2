@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head'
 import Particles from "react-tsparticles"
 import Image from 'next/image'
@@ -20,7 +21,7 @@ return (
           src={logo}
           layout="responsive"
         />
-      <a href="#" className='btn btn-outline-light fs-1 px-5 my-5'>Start</a>
+      <a href="#" className='btn btn-outline-light fs-1 px-4 my-5 letter-space ff-1 fw-bold' >Start</a>
       
     </div>
 
