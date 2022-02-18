@@ -10,7 +10,175 @@ a {
   color: inherit;
   text-decoration: none;
 }
+@media (min-width: 0) {
+  .w-xs-100 {
+    width: 100%;
+  }
 
-* {
-  box-sizing: border-box;
+  .w-xs-75 {
+    width: 75%;
+  }
+
+  .w-xs-50 {
+    width: 50%;
+  }
+
+  .w-xs-25 {
+    width: 25%;
+  }
+
+  .h-xs-100 {
+    height: 100%;
+  }
+
+  .h-xs-75 {
+    height: 75%;
+  }
+
+  .h-xs-50 {
+    height: 50%;
+  }
+
+  .h-xs-25 {
+    height: 25%;
+  }
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .w-sm-100 {
+    width: 100%;
+  }
+
+  .w-sm-75 {
+    width: 75%;
+  }
+
+  .w-sm-50 {
+    width: 50%;
+  }
+
+  .w-sm-25 {
+    width: 25%;
+  }
+
+  .h-sm-100 {
+    height: 100%;
+  }
+
+  .h-sm-75 {
+    height: 75%;
+  }
+
+  .h-sm-50 {
+    height: 50%;
+  }
+
+  .h-sm-25 {
+    height: 25%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .w-md-100 {
+    width: 100%;
+  }
+
+  .w-md-75 {
+    width: 75%;
+  }
+
+  .w-md-50 {
+    width: 50%;
+  }
+
+  .w-md-25 {
+    width: 25%;
+  }
+
+  .h-md-100 {
+    height: 100%;
+  }
+
+  .h-md-75 {
+    height: 75%;
+  }
+
+  .h-md-50 {
+    height: 50%;
+  }
+
+  .h-md-25 {
+    height: 25%;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .w-lg-100 {
+    width: 100%;
+  }
+
+  .w-lg-75 {
+    width: 75%;
+  }
+
+  .w-lg-50 {
+    width: 50%;
+  }
+
+  .w-lg-25 {
+    width: 25%;
+  }
+
+  .h-lg-100 {
+    height: 100%;
+  }
+
+  .h-lg-75 {
+    height: 75%;
+  }
+
+  .h-lg-50 {
+    height: 50%;
+  }
+
+  .h-lg-25 {
+    height: 25%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .w-xl-100 {
+    width: 100%;
+  }
+
+  .w-xl-75 {
+    width: 75%;
+  }
+
+  .w-xl-50 {
+    width: 50%;
+  }
+
+  .w-xl-25 {
+    width: 25%;
+  }
+
+  .h-xl-100 {
+    height: 100%;
+  }
+
+  .h-xl-75 {
+    height: 75%;
+  }
+
+  .h-xl-50 {
+    height: 50%;
+  }
+
+  .h-xl-25 {
+    height: 25%;
+  }
 }

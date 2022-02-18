@@ -1,14 +1,31 @@
 import Head from 'next/head'
+import Particles from "react-tsparticles"
+import Image from 'next/image'
+import logo from '../public/logo.svg'
+import Soundbar from '../components/Soundbar'
 
 export default function Home() {
-  return (
-    <div className='container'>
-      <Head>
-        <title>Tristan Bombase</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <h1 className='m-5'>Portfolio</h1>
+return (
+  <div className='position-relative vw-100 vh-100 text-white'>
+    <Head>
+      <title>Tristan Bombase</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <div className='position-absolute top-0 start-0 m-5'>
+      <Soundbar/>
     </div>
+    <div className="position-absolute top-50 start-50 translate-middle text-center text-white w-lg-25 w-xs-50">
+        <Image
+          alt="Mountains"
+          src={logo}
+          layout="responsive"
+        />
+      <a href="#" className='btn btn-outline-light fs-1 px-5 my-5'>Start</a>
+      
+    </div>
+
+    <Particles url="/particles.json" />
+  </div>
+
   )
 }
