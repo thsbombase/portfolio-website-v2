@@ -1,31 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
-html,
-body {
-  padding: 0;
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+
+  width: 300px;
+  height: 300px;
+
+  background-color: #ffd803;
+  border-radius: 50%;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #078080;
+  height: 100vh;
+  z-index: 1;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 1;
+}
+
+ul,
+li {
   margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 
-a {
-  color: inherit;
+ul {
+  padding: 25px;
+  position: absolute;
+  top: 100px;
+  width: 230px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.text-placeholder {
+  border-radius: 5px;
+  padding-left: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
+  flex: 1;
 }
 
-.letter-space{
-letter-spacing: 8px;
+
+.text {
+  color: #fef6e4;
 }
 
-.ff-1{
-  font-family: 'Electrolize';
-}
 
-img{
-  -khtml-user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
 
 @media (min-width: 0) {
   .w-xs-100 {

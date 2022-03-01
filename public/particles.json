@@ -29,7 +29,7 @@
     },
     "modes": {
       "bubble": {
-        "distance": 400,
+        "distance": 200,
         "duration": 2,
         "opacity": 0.8,
         "size": 40
@@ -47,7 +47,7 @@
       "color": {
         "value": "#ffffff"
       },
-      "distance": 150,
+      "distance": 100,
       "opacity": 0.3
     },
     "move": {
@@ -70,8 +70,8 @@
       "density": {
         "enable": true
       },
-      "limit": 500,
-      "value": 200
+      "limit": 100,
+      "value": 70
     },
     "opacity": {
       "value": 0.4,
