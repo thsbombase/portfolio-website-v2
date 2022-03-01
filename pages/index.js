@@ -2,7 +2,7 @@
 import Image from "next/image"
 export default function Main() {
 return (
-<section id="main" className="container-fluid text-white p-5 mt-5">
+<section className="container-fluid text-white p-5 mt-5">
   <div className="row">
     <div className="col-sm-5 align-items-center">
       <Image src="/myPicture.svg" alt="Picture of the author" width={500} height={500} />
@@ -19,13 +19,12 @@ return (
         PocketDevs as a Web Developer.
       </p>
       <div className="mt-4">
-        <a href="https://www.facebook.com/TanTannnnnnnn/" className="link-light"><i
-            className="fab fa-facebook fa-2x me-4"></i></a>
-        <a href="https://www.linkedin.com/in/tristanharveybombase/" className="link-light"><i
-            className="fab fa-linkedin fa-2x me-4"></i></a>
-        <a href="https://gitlab.com/thsbombase" className="link-light"> <i className="fab fa-gitlab fa-2x me-4"></i></a>
-        <a href="https://github.com/thsbombase" className="link-light"> <i
-            className="fab fa-github-square fa-2x me-4"></i></a>
+        <a href="https://www.facebook.com/TanTannnnnnnn/" className="link-light" target="blank"><i
+            className="bi bi-facebook fs-3  me-4" ></i></a>
+        <a href="https://www.linkedin.com/in/tristanharveybombase/" className="link-light" target="blank"><i
+            className="bi bi-linkedin fs-3 me-4"></i></a>
+        <a href="https://github.com/thsbombase" className="link-light" target="blank"> 
+        <i className="bi bi-github fs-3 me-4"></i></a>
       </div>
     </div>
   </div>
