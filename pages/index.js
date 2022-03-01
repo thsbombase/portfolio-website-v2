@@ -1,33 +1,30 @@
-/* eslint-disable react/no-unescaped-entities */
-import Image from "next/image"
-export default function Main() {
+/* eslint-disable @next/next/no-page-custom-font */
+import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
+import logo from '../public/img/logo.svg'
+export default function Home() {
 return (
-<section className="container-fluid text-white p-5 mt-5">
-  <div className="row">
-    <div className="col-sm-5 align-items-center">
-      <Image src="/img/myPicture.svg" alt="Picture of the author" width={500} height={500} />
+    <Link href="/about">
+    <a >
+    <div className='position-relative vw-100 vh-100 text-white'>
+    <Head>
+      <title>Tristan Bombase</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <div className='position-absolute top-0 start-0 m-5'>
+
     </div>
-    <div className="col-sm-7 p-5 align-items-center">
-      <p className="fs-5 mt-5">
-        Hi There!👋 I'm
-      </p>
-      <h1 className="mt-2">
-        Tristan Harvey Bombase
-      </h1>
-      <p className="fs-4 mt-4">
-        I'm currently pursuing a Bachelor's degree in Information Technology at New Era University and interning at
-        PocketDevs as a Web Developer.
-      </p>
-      <div className="mt-4">
-        <a href="https://www.facebook.com/TanTannnnnnnn/" className="link-light" target="blank"><i
-            className="bi bi-facebook fs-3  me-4" ></i></a>
-        <a href="https://www.linkedin.com/in/tristanharveybombase/" className="link-light" target="blank"><i
-            className="bi bi-linkedin fs-3 me-4"></i></a>
-        <a href="https://github.com/thsbombase" className="link-light" target="blank"> 
-        <i className="bi bi-github fs-3 me-4"></i></a>
-      </div>
+    <div className="position-absolute top-50 start-50 translate-middle text-center text-white w-lg-25 w-xs-50">
+        <Image
+          alt="Mountains"
+          src={logo}
+          layout="responsive"
+        />
+      <p  className='fs-5 px-4 my-5' >Tap to Continue</p>
     </div>
   </div>
-</section>
+  </a>
+</Link>
 )
 }
