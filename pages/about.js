@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { WavingHand } from "../components/Navigation/WavingHand";
+import { WavingHand } from "../components/WavingHand";
 
 export default function Main() {
   const name = "Tristan Harvey Bombase";

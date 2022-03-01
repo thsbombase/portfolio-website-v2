@@ -11,12 +11,12 @@ const variants = {
 };
 
 const Items = [
-  { id: "0", text: "About", path:"/about" },
-  { id: "1", text: "Experience", path:"/experience" },
-  { id: "2", text: "Education", path:"/education" },
-  { id: "3", text: "Skills", path:"/skills" },
-  { id: "4", text: "Projects", path:"/projects" },
-  { id: "5", text: "Contact",path:"/contact" }
+  { id: "0", text: "⭐️ About", path:"/about" },
+  { id: "1", text: "💼 Experience", path:"/experience" },
+  { id: "2", text: "🎓Education", path:"/education" },
+  { id: "3", text: "👨‍💻 Skills", path:"/skills" },
+  { id: "4", text: "📖 Projects", path:"/projects" },
+  { id: "5", text: "📞 Contact",path:"/contact" }
 ];
 
 export const Navigation = () => (
