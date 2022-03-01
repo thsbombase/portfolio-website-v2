@@ -5,7 +5,7 @@ return (
 <section className="container-fluid text-white p-5 mt-5">
   <div className="row">
     <div className="col-sm-5 align-items-center">
-      <Image src="/myPicture.svg" alt="Picture of the author" width={500} height={500} />
+      <Image src="/img/myPicture.svg" alt="Picture of the author" width={500} height={500} />
     </div>
     <div className="col-sm-7 p-5 align-items-center">
       <p className="fs-5 mt-5">

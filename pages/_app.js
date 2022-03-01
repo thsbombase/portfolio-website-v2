@@ -47,7 +47,7 @@ return <></>;
 }
 
 return (
-<>
+<div className="h-100">
   <Head>
     <title>Tristan Bombase</title>
     <link rel="icon" href="/favicon.ico" />
@@ -61,7 +61,7 @@ return (
     <Component {...pageProps} />
     <Particles url="/particles.json" />
   </div>
-</>
+</div>
 )
 }
 
