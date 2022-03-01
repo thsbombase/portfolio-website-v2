@@ -43,17 +43,17 @@ return (
             damping: 20,
           }}
           >
-      <Image src="/img/myPicture.svg" alt="Picture of the author" width={500} height={500} />
+      <Image src="/img/myPicture.svg" alt="Picture of the author" width={500} height={500} priority={true}/>
     </motion.div>
     <div className="col-sm-7 p-5 align-items-center" >
-      <motion.p 
+      <motion.div 
       className="fs-5 mt-5"
       animate={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 20 }}
       transition={{ delay: 0.3 }}
       >
         Hi There!<WavingHand/> I'm
-      </motion.p>
+      </motion.div>
       <motion.h1 
         variants={animateName}
         whileHover={{

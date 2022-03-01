@@ -36,28 +36,39 @@ function MyApp({ Component, pageProps }) {
   };
 
   return (
-    <AnimatePresence exitBeforeEnter>
-      {currentURL !== '/'?
-      <div className="h-100">
-        <Head>
-          <title>Tristan Bombase</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <motion.nav initial={false} animate={isOpen ? "open" : "closed" } custom="100%">
-          <motion.div className="navbar" variants={sidebar} />
-            <Navigation />
-          <MenuToggle toggle={()=> toggleOpen()} />
-        </motion.nav>
-        <div className="container text-white h-100">
-          <Component {...pageProps} />
+    <>
+        {currentURL !== '/'?
+        <div className="h-100">
+          <Head>
+            <title>Tristan Bombase</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <motion.div
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.4 }}>
+            <motion.nav 
+              initial={false} 
+              animate={ isOpen ? "open" : "closed" } 
+              custom="100%">
+              <motion.div className="navbar" variants={sidebar} />
+                <div className={isOpen ? "" : "d-none" }>
+                  <Navigation />
+                </div>
+              <MenuToggle toggle={()=> toggleOpen()} />
+            </motion.nav>
+          </motion.div>
+          <div className="container text-white h-100">
+            <Component {...pageProps} />
+          </div>
         </div>
-      </div>:
-      <>
-      <Component {...pageProps} />
-      
-      </>}
-      <Particles url="/particles.json" />
-    </AnimatePresence>
+        :
+        <>
+        <Component {...pageProps} />
+        </>
+      }
+        <Particles url="/particles.json" />
+    </>
     )
 }
 
