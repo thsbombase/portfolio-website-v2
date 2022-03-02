@@ -223,13 +223,15 @@ li {
 
 .portfolio-item .caption .caption-content h2,
 .portfolio-item .caption .caption-content .h2 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
+  text-shadow: 0 0 3px #242424
 }
 
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
+  text-shadow: 0 0 3px #242424;
 }
 
 @media (min-width: 992px) {

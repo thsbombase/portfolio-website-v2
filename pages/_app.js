@@ -8,6 +8,9 @@ import { AnimatePresence,motion, useCycle } from "framer-motion"
 import {useRouter} from 'next/router';
 import { MenuToggle } from "../components/Navigation/Toggle"
 import { Navigation } from "../components/Navigation/Navigation"
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()

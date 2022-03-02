@@ -1,55 +1,62 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faReact,
+    faNodeJs,
+    faLaravel,
+    faBootstrap
+} 
+from "@fortawesome/free-brands-svg-icons";
 export default function Projects() {
 return (
-    <section className="content-section mt-5" id="portfolio">
+    <section className="container content-section" style={{marginTop:"6.5rem"}} id="portfolio">
     <div className="container px-4 px-lg-5 mt-5">
         <div className="content-section-heading text-center">
-            <h2 className="mb-5">Recent Projects</h2>
+            <h1 className="mb-5">Works</h1>
         </div>
         <div className="row gx-0">
             <div className="col-lg-6">
-                <a className="portfolio-item" href="#!">
+                <a className="portfolio-item" href="https://clientneunite-jmdej.ondigitalocean.app/">
                     <div className="caption">
-                        <div className="caption-content">
-                            <div className="h2">Stationary</div>
-                            <p className="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                        <div className="caption-content ">
+                            <div className="h2">NEUnite (Capstone Project)</div>
+                            <p className="mb-0">An Exlusive Online Communication Platform for New Era</p>
+                            <span className="badge rounded-pill bg-primary">
+                                <FontAwesomeIcon
+                                icon={faReact}
+                                /> React.js
+                            </span>
+                            <span className="badge rounded-pill bg-success mx-1 ">
+                                <FontAwesomeIcon
+                                icon={faNodeJs}
+                                /> Node.js
+                            </span>
                         </div>
                     </div>
-                    <Image className="img-fluid" src="/img/portfolio-1.jpg" alt="..." width={700} height={500} />
+                    <Image className="img-fluid" src="/img/portfolio-1.svg" alt="..." width={700} height={500} />
                 </a>
             </div>
             <div className="col-lg-6">
-                <a className="portfolio-item" href="#!">
+                <a className="portfolio-item" href="https://hub.pocketdevs.ph/">
                     <div className="caption">
                         <div className="caption-content">
-                            <div className="h2">Ice Cream</div>
-                            <p className="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                            <div className="h2">PocketHub</div>
+                            <p className="mb-0"></p>
+                            <span className="badge rounded-pill bg-danger">
+                                <FontAwesomeIcon
+                                icon={faLaravel}
+                                /> Laravel
+                            </span>
+                        
+                        <span className="badge rounded-pill mx-1" style={{backgroundColor:"#6b2fcc"}}>
+                            <FontAwesomeIcon
+                            icon={faBootstrap}
+                            /> Bootstrap 5
+                        </span>
                         </div>
                     </div>
-                    <Image className="img-fluid" src="/img/portfolio-2.jpg" alt="..." width={700} height={500}/>
-                </a>
-            </div>
-            <div className="col-lg-6">
-                <a className="portfolio-item" href="#!">
-                    <div className="caption">
-                        <div className="caption-content">
-                            <div className="h2">Strawberries</div>
-                            <p className="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                        </div>
-                    </div>
-                    <Image className="img-fluid" src="/img/portfolio-3.jpg" alt="..." width={700} height={500} />
-                </a>
-            </div>
-            <div className="col-lg-6">
-                <a className="portfolio-item" href="#!">
-                    <div className="caption">
-                        <div className="caption-content">
-                            <div className="h2">Workspace</div>
-                            <p className="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                        </div>
-                    </div>
-                    <Image className="img-fluid" src="/img/portfolio-4.jpg" alt="..." width={700} height={500} />
+                    <Image className="img-fluid" src="/img/portfolio-2.svg" alt="..." width={700} height={500}/>
                 </a>
             </div>
         </div>

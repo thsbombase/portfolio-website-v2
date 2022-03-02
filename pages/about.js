@@ -62,7 +62,7 @@ return (
         }}
         initial="initial"
         animate="animate"
-        className="firstExample mt-5"
+        className="mt-5"
       >
             {nameArr.map((letter, index) => (
             <motion.span
