@@ -5,7 +5,7 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Particles from "react-tsparticles"
-import { AnimatePresence, motion, useCycle } from "framer-motion"
+import { motion, useCycle } from "framer-motion"
 import {useRouter} from 'next/router';
 import { MenuToggle } from "../components/Navigation/Toggle"
 import { Navigation } from "../components/Navigation/Navigation"
@@ -48,8 +48,17 @@ function MyApp({ Component, pageProps }) {
         {currentURL !== '/'?
         <div className="h-100">
           <Head>
+            <meta charset="utf-8" />
+            <meta httpEquiv="x-ua-compatible" content="ie=edge" />
             <title>Tristan Bombase</title>
             <link rel="icon" href="/favicon.ico" />
+            <meta name="description" content="I'm currently pursuing a Bachelor's degree in Information Technology at New Era University and interning at
+            PocketDevs as a Web Developer." />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta property="og:description"
+                content="I'm currently pursuing a Bachelor's degree in Information Technology at New Era University and interning at
+                PocketDevs as a Web Developer." />
+            <link rel="shortcut icon" type="iWemage/x-icon" href="/apple-touch-icon.png" />
           </Head>
           <motion.div
             animate={{ opacity: 1 }}
