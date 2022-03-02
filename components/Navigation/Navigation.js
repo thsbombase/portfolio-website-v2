@@ -12,10 +12,9 @@ const variants = {
 
 const Items = [
   { id: "0", text: "⭐️ About", path:"/about" },
-  { id: "1", text: "💼 Experience", path:"/experience" },
-  { id: "2", text: "👨‍💻 Skills", path:"/skills" },
-  { id: "3", text: "📖 Works", path:"/works" },
-  { id: "4", text: "📞 Contact",path:"/contact" }
+  { id: "1", text: "💼 Resume", path:"/resume" },
+  { id: "2", text: "📖 Works", path:"/works" },
+  { id: "3", text: "📞 Contact",path:"/contact" }
 ];
 
 export const Navigation = () => (
