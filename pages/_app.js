@@ -1,10 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from 'react'
 import Head from 'next/head'
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Particles from "react-tsparticles"
-import { AnimatePresence,motion, useCycle } from "framer-motion"
+import { AnimatePresence, motion, useCycle } from "framer-motion"
 import {useRouter} from 'next/router';
 import { MenuToggle } from "../components/Navigation/Toggle"
 import { Navigation } from "../components/Navigation/Navigation"
@@ -37,6 +38,10 @@ function MyApp({ Component, pageProps }) {
       }
     }
   };
+  const dynamicRoute = useRouter().asPath
+  useEffect(() => {
+    toggleOpen(0)
+  }, [dynamicRoute])
 
   return (
     <main>
