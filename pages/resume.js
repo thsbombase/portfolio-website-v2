@@ -11,6 +11,8 @@ import {
     }from "@fortawesome/free-brands-svg-icons";
 import { GlowingLetters } from "../components/GlowingLetters";
 import Image from "next/image"
+import { motion } from 'framer-motion';
+
 export default function Experience() {
 
 return (
@@ -66,74 +68,156 @@ return (
         </VerticalTimelineElement>
     </VerticalTimeline>
 
-    <div className="container mt-5 text-center">
+    <div className="container mt-5 text-center mb-5">
     <div className="text-center my-5"><GlowingLetters word="Technology Stack"/></div>
-    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                    <p className="card-text"><Image src="/img/php.svg" alt="..." width={100} height={100} priority={true}/></p>
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                        <p className="card-text"><Image src="/img/php.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/python.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}
+            >
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/python.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/javascript.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/javascript.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/laravel.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/laravel.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/django.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/django.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/react.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/react.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/nextjs.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/nextjs.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/html.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/html.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                <div className="card-body">
-                <p className="card-text"><Image src="/img/css.svg" alt="..." width={100} height={100} priority={true}/></p>
+            </motion.div>
+            <motion.div 
+                className="col"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
+                    <div className="card-body">
+                    <p className="card-text"><Image src="/img/css.svg" alt="..." width={100} height={100} priority={true}/></p>
+                    </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
-</div>
 </div>
 )
 }
