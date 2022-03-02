@@ -9,15 +9,36 @@ import {
 } 
 from "@fortawesome/free-brands-svg-icons";
 import { GlowingLetters } from "../components/GlowingLetters";
+import { motion } from "framer-motion";
 export default function Works() {
 return (
     <section className="container content-section" style={{marginTop:"6.5rem"}} id="portfolio">
     <div className="container px-4 px-lg-5 mt-5">
         <div className="content-section-heading text-center">
-            <div className="mb-5"><GlowingLetters word="Works"/></div>
+            <motion.div 
+                className="mb-5"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
+                <GlowingLetters word="Works"/>
+            </motion.div>
         </div>
         <div className="row gx-0">
-            <div className="col-lg-6">
+            <motion.div 
+                className="col-lg-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
                 <a className="portfolio-item" href="https://clientneunite-jmdej.ondigitalocean.app/">
                     <div className="caption">
                         <div className="caption-content ">
@@ -37,8 +58,17 @@ return (
                     </div>
                     <Image className="img-fluid" src="/img/portfolio-1.svg" alt="..." width={700} height={500} />
                 </a>
-            </div>
-            <div className="col-lg-6">
+            </motion.div>
+            <motion.div 
+                className="col-lg-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.3 }}
+                variants={{
+                    visible: { opacity: 1, scale: 1 },
+                    hidden: { opacity: 0, scale: 0 }
+                }}>
                 <a className="portfolio-item" href="https://hub.pocketdevs.ph/">
                     <div className="caption">
                         <div className="caption-content">
@@ -59,7 +89,7 @@ return (
                     </div>
                     <Image className="img-fluid" src="/img/portfolio-2.svg" alt="..." width={700} height={500}/>
                 </a>
-            </div>
+            </motion.div>
         </div>
     </div>
 </section>

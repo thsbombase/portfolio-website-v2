@@ -19,7 +19,18 @@ return (
 
 <div className='container mt-5 '>
     <br />
-    <div className='mt-3 mb-5 text-center'><GlowingLetters word="Experience"/></div>
+    <motion.div
+        className='mt-3 mb-5 text-center'
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
+        variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 }
+        }}>
+        <GlowingLetters word="Experience"/>
+    </motion.div>
     <VerticalTimeline>
         <VerticalTimelineElement className="vertical-timeline-element--work"
             contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -69,7 +80,19 @@ return (
     </VerticalTimeline>
 
     <div className="container mt-5 text-center mb-5">
-    <div className="text-center my-5"><GlowingLetters word="Technology Stack"/></div>
+        <br />
+        <motion.div 
+            className="text-center my-5"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3 }}
+            variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0 }
+            }}>
+            <GlowingLetters word="Technology Stack"/>
+        </motion.div>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
             <motion.div 
                 className="col"
