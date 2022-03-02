@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
   };
 
   return (
-    <>
+    <main>
         {currentURL !== '/'?
         <div className="h-100">
           <Head>
@@ -71,7 +71,7 @@ function MyApp({ Component, pageProps }) {
         </>
       }
         <Particles url="/particles.json" />
-    </>
+    </main>
     )
 }
 

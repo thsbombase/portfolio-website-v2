@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 html,
 body {
   margin: 0;
   padding: 0;
   border: 0;
+}
+main{
+  font-family: "Inter";
+  letter-spacing: 1.2px;
 }
 
 img {
@@ -16,9 +21,9 @@ img {
   max-width: 850px;
   margin: 75px auto;
   height: 39rem;
-  background-color: rgb(207, 200, 200);
+  background-color: rgb(67, 88, 185);
   overflow: hidden;
-  box-shadow: 5px 25px 35px #3535356b
+  box-shadow: 5px 25px 35px #0f0f0fce
 }
 
 .wrapper .bg-purple {
@@ -29,9 +34,7 @@ img {
   padding-left: 30px;
   padding-right: 20px
 }
-.wrapper .bg-purple .text-white {
-  font-size: rem
-}
+
 
 .wrapper .contact-form {
   width: 100%;
@@ -45,7 +48,7 @@ img {
 
 .wrapper .contact-form label {
   font-size: 0.9rem;
-  color: #555;
+  color: white;
   font-weight: 500;
   margin-bottom: 10px
 }
@@ -56,7 +59,7 @@ img {
 }
 
 .wrapper .contact-form .form-control {
-  background-color: #e7e7e7;
+  background-color: #e4dcdc;
   box-shadow: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -79,17 +82,24 @@ img {
 
 @media(max-width: 900.5px) {
   .wrapper {
-    margin: 90px auto
+    margin: 90px auto;
+    height: 41rem;
+  }
+  .wrapper .bg-purple {
+    display: none
   }
 }
 
 @media(max-width: 575.5px) {
+  .wrapper {
+    height: 41rem;
+  }
   .wrapper .contact-form {
       padding: 40px
   }
 
   .wrapper .bg-purple {
-      padding-left: 30px
+    display: none
   }
 }
 
@@ -100,10 +110,6 @@ img {
 }
 
 @media(max-width: 350px) {
-  .wrapper {
-      height: 570px
-  }
-
   .wrapper .contact-form {
       padding: 20px
   }
@@ -227,8 +233,7 @@ li {
 }
 
 .portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-shadow: 0 0 3px #242424;
 }
 

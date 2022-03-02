@@ -8,12 +8,13 @@ import {
     faBootstrap
 } 
 from "@fortawesome/free-brands-svg-icons";
-export default function Projects() {
+import { GlowingLetters } from "../components/GlowingLetters";
+export default function Works() {
 return (
     <section className="container content-section" style={{marginTop:"6.5rem"}} id="portfolio">
     <div className="container px-4 px-lg-5 mt-5">
         <div className="content-section-heading text-center">
-            <h1 className="mb-5">Works</h1>
+            <div className="mb-5"><GlowingLetters word="Works"/></div>
         </div>
         <div className="row gx-0">
             <div className="col-lg-6">

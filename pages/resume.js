@@ -3,14 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import 'react-vertical-timeline-component/style.min.css';
 import { faBriefcase, faPy } from '@fortawesome/free-solid-svg-icons';
 import {
-faReact,
-faPython,
-faLaravel,
-faBootstrap,
-faGitAlt
-
-}
-from "@fortawesome/free-brands-svg-icons";
+        faReact,
+        faPython,
+        faLaravel,
+        faBootstrap,
+        faGitAlt
+    }from "@fortawesome/free-brands-svg-icons";
+import { GlowingLetters } from "../components/GlowingLetters";
 import Image from "next/image"
 export default function Experience() {
 
@@ -18,7 +17,7 @@ return (
 
 <div className='container mt-5 '>
     <br />
-    <h1 className='mt-3 mb-5 text-center'>Experience</h1>
+    <div className='mt-3 mb-5 text-center'><GlowingLetters word="Experience"/></div>
     <VerticalTimeline>
         <VerticalTimelineElement className="vertical-timeline-element--work"
             contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -68,7 +67,7 @@ return (
     </VerticalTimeline>
 
     <div className="container mt-5 text-center">
-    <h1 className="text-center my-5">Technology Stack</h1>
+    <div className="text-center my-5"><GlowingLetters word="Technology Stack"/></div>
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
         <div className="col">
             <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
