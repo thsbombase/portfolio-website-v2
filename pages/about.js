@@ -20,11 +20,14 @@ export default function Main() {
   }
 
   const animateLetter = {
-    initial: { opacity: 0, y: "120%" },
+    initial: { y: "120%" },
     animate: { 
-        opacity: 1, y: 0,
+        textShadow: "0 0 8px #FFFFFF",
         transition: {
-          ...transition 
+          ...transition,
+          repeat: Infinity,
+      repeatType: "reverse",
+      duration: 2 
       }
     }
 }
@@ -57,8 +60,7 @@ return (
       <motion.h1 
         variants={animateName}
         whileHover={{
-          scale: 1,
-          textShadow: "0 0 10px #FFFFFF"
+          textShadow: "0 0 5px #FFFFFF"
         }}
         initial="initial"
         animate="animate"
