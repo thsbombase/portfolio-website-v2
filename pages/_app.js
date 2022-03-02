@@ -58,6 +58,7 @@ function MyApp({ Component, pageProps }) {
             <meta property="og:description"
                 content="I'm currently pursuing a Bachelor's degree in Information Technology at New Era University and interning at
                 PocketDevs as a Web Developer." />
+                <meta property="og:image" content="/img/logo.svg" />
             <link rel="shortcut icon" type="iWemage/x-icon" href="/apple-touch-icon.png" />
           </Head>
           <motion.div
