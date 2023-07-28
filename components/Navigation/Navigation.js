@@ -14,7 +14,6 @@ const Items = [
   { id: "0", text: "⭐️ About", path:"/about" },
   { id: "1", text: "💼 Resume", path:"/resume" },
   { id: "2", text: "📖 Works", path:"/works" },
-  { id: "3", text: "📞 Contact",path:"/contact" }
 ];
 
 export const Navigation = () => (

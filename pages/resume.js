@@ -32,9 +32,52 @@ return (
         <GlowingLetters word="Experience"/>
     </motion.div>
     <VerticalTimeline>
+    <VerticalTimelineElement className="vertical-timeline-element--work"
+    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} date="June 2022 - Present"
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+>
+    <h3 className="vertical-timeline-element-title">Web Developer</h3>
+    <h4 className="vertical-timeline-element-subtitle">Quickway Holdings Inc.</h4>
+    <p>
+        <span className="badge rounded-pill bg-danger">
+                <FontAwesomeIcon icon={faLaravel} /> Laravel
+            </span> 
+            <span className="badge rounded-pill mx-1 bg-primary">
+                <FontAwesomeIcon icon={faGitAlt} /> ReactJS
+            </span>
+            <span className="badge rounded-pill mx-1" style={{backgroundColor:"#6b2fcc"}}>
+                <FontAwesomeIcon icon={faBootstrap} /> Bootstrap 5
+            </span> 
+            <span className="badge rounded-pill mx-1 bg-dark">
+                <FontAwesomeIcon icon={faGitAlt} /> Git
+            </span>
+    </p>
+    </VerticalTimelineElement>
+        <VerticalTimelineElement className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} date="May 2022 - March 2023"
+        icon={<FontAwesomeIcon icon={faBriefcase} />}
+        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    >
+        <h3 className="vertical-timeline-element-title">Web Developer</h3>
+        <h4 className="vertical-timeline-element-subtitle">PocketDevs</h4>
+        <p>
+            <span className="badge rounded-pill bg-danger">
+                    <FontAwesomeIcon icon={faLaravel} /> Laravel
+                </span> 
+                <span className="badge rounded-pill mx-1" style={{backgroundColor:"#6b2fcc"}}>
+                    <FontAwesomeIcon icon={faBootstrap} /> Bootstrap 5
+                </span> 
+                <span className="badge rounded-pill mx-1 bg-dark">
+                    <FontAwesomeIcon icon={faGitAlt} /> Git
+                </span>
+        </p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement className="vertical-timeline-element--work"
             contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} date="January 2022 - present"
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} date="January 2022 - May 2022"
             icon={<FontAwesomeIcon icon={faBriefcase} />}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         >
@@ -119,23 +162,6 @@ return (
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: 0 }
-                }}
-            >
-                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                    <div className="card-body">
-                    <p className="card-text"><Image src="/img/python.svg" alt="..." width={100} height={100} priority={true}/></p>
-                    </div>
-                </div>
-            </motion.div>
-            <motion.div 
-                className="col"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.3 }}
-                variants={{
-                    visible: { opacity: 1, scale: 1 },
-                    hidden: { opacity: 0, scale: 0 }
                 }}>
                 <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
                     <div className="card-body">
@@ -156,22 +182,6 @@ return (
                 <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
                     <div className="card-body">
                     <p className="card-text"><Image src="/img/laravel.svg" alt="..." width={100} height={100} priority={true}/></p>
-                    </div>
-                </div>
-            </motion.div>
-            <motion.div 
-                className="col"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.3 }}
-                variants={{
-                    visible: { opacity: 1, scale: 1 },
-                    hidden: { opacity: 0, scale: 0 }
-                }}>
-                <div className="card text-white mb-3" style={{backgroundColor: "#172c52"}}>
-                    <div className="card-body">
-                    <p className="card-text"><Image src="/img/django.svg" alt="..." width={100} height={100} priority={true}/></p>
                     </div>
                 </div>
             </motion.div>

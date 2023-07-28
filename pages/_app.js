@@ -52,12 +52,10 @@ function MyApp({ Component, pageProps }) {
             <meta httpEquiv="x-ua-compatible" content="ie=edge" />
             <title>Tristan Bombase</title>
             <link rel="icon" href="/favicon.ico" />
-            <meta name="description" content="I'm currently pursuing a Bachelor's degree in Information Technology at New Era University and interning at
-            PocketDevs as a Web Developer." />
+            <meta name="description" content="Experienced Web Developer passionate about creating user-friendly solutions. Proficient in Laravel, ReactJS, and JavaScript. Committed to excellence and continuous learning. Ready to make a positive impact through innovative projects." />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta property="og:description"
-                content="I'm currently pursuing a Bachelor's degree in Information Technology at New Era University and interning at
-                PocketDevs as a Web Developer." />
+                content="Experienced Web Developer passionate about creating user-friendly solutions. Proficient in Laravel, ReactJS, and JavaScript. Committed to excellence and continuous learning. Ready to make a positive impact through innovative projects." />
                 <meta property="og:image" content="/img/logo.svg" />
             <link rel="shortcut icon" type="iWemage/x-icon" href="/apple-touch-icon.png" />
           </Head>

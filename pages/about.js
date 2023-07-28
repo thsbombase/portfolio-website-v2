@@ -6,10 +6,10 @@ import { GlowingLetters } from "../components/GlowingLetters";
 
 export default function Main() {
 return (
-  <section className="container-fluid text-white p-5 mt-5">
+  <section className="container-fluid text-white p-5 mt-3">
     <div className="row">
       <motion.div 
-        className="col-sm-5 align-items-center" 
+        className="col-sm-5 align-items-center mt-5" 
         whileHover={{ scale: 1.1 }} 
         whileTap={{ scale: 0.95 }}
         initial={{ scale: 0 }} 
@@ -42,8 +42,7 @@ return (
         initial={{ opacity: 0, y: 20 }}
         transition={{ delay: 0.4 }}
         >
-          I'm currently pursuing a Bachelor's degree in Information Technology at New Era University and interning at
-          PocketDevs as a Web Developer.
+        Experienced Web Developer passionate about creating user-friendly solutions. Proficient in Laravel, PHP, and JavaScript. Committed to excellence and continuous learning. Ready to make a positive impact through innovative projects. 
         </motion.p>
         <div className="mt-4">
           <motion.div 
