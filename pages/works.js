@@ -33,46 +33,7 @@ export default function Works() {
           </motion.div>
         </div>
         <div className="row gx-0">
-          <motion.div
-            className="col-lg-6"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.3, delay: 0.2 }}
-            variants={{
-              visible: { opacity: 1, scale: 1 },
-              hidden: { opacity: 0, scale: 0 },
-            }}
-          >
-            <a
-              className="portfolio-item"
-              href="https://indie-co.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="caption">
-                <div className="caption-content">
-                  <div className="h2">The Indiependent Collective</div>
-                  <span className="badge rounded-pill bg-danger">
-                    <FontAwesomeIcon icon={faLaravel} /> Laravel
-                  </span>
-                  <span
-                    className="badge rounded-pill bg- mx-1 "
-                    style={{ backgroundColor: "#6b2fcc" }}
-                  >
-                    <FontAwesomeIcon icon={faBootstrap} /> Bootstrap 5
-                  </span>
-                </div>
-              </div>
-              <Image
-                className="img-fluid"
-                src="/img/indie.png"
-                alt="..."
-                width={700}
-                height={500}
-              />
-            </a>
-          </motion.div>
+          
           <motion.div
             className="col-lg-6"
             initial="hidden"
